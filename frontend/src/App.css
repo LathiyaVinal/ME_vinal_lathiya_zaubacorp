@@ -1,0 +1,159 @@
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 50%;
+  justify-content: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+#newtask {
+  display: flex;
+  position: relative;
+}
+
+#newtask input {
+  width: 75%;
+  height: 45px;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border-radius: 10px 0px 0px 10px;
+  border: 2px solid #d1d3d4;
+}
+
+#newtask input:focus {
+  outline: none;
+  border-color: #0d75ec;
+}
+
+#newtask button {
+  position: relative;
+  float: right;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: #0d75ec;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  width: 20%;
+  height: 45px;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-div {
+  margin-top: 0px;
+  width: 75%;
+  flex-direction: column;
+  box-shadow: rgb(0 0 0 / 1%) 0px 10px 20px, rgb(0 0 0 / 10%) 0px 3px 6px;
+  z-index: 1;
+}
+
+.main-div>div {
+  width: 100%;
+  border-bottom: 1px dashed lightgray;
+  cursor: pointer;
+}
+
+.main-div>div:hover {
+  background-color: #0d75ec;
+  color: white;
+}
+
+.main-div>p {
+  background-color: #0d75ec;
+  color: white;
+}
+
+.show {
+  padding: 20px 0px 20px 15px;
+}
+
+.main-div>p {
+  padding: 20px 0px 20px 15px;
+}
+
+
+table {
+  border: 2px solid gray;
+  width: 60vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  justify-content: space-between;
+}
+
+.col-cin {
+  border-right: 2px solid gray;
+}
+
+th {
+  padding: 15px 5px;
+  text-align: center;
+  width: 30vw;
+  background-color: lightgray;
+  border-bottom: 2px solid gray;
+}
+
+td {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30vw;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 5px;
+}
+
+.table-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-company {
+  background-color: #0d75ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  font-size: large;
+  margin-top: 5vh;
+}
+
+.add-company:hover {
+  background-color: #5ea9ff;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.table-parent {
+  height: 70vh;
+}
